@@ -9,7 +9,7 @@ export interface FetchOptions{
     headers?: { [key: string]: string };
     method?: Methods;
     params?: { [key: string]: string };
-    body?: { [key: string]: string | boolean | number };
+    body?: { [key: string]: string | boolean | number | string[] };
 }
 
 /**

@@ -170,7 +170,7 @@ class PlayerManager {
                 },
                 body: {
                     ...options,
-                    device_ids: devices.join(',')
+                    device_ids: devices
                 }
             });
             return true;
@@ -242,7 +242,7 @@ class PlayerManager {
             const opts = {
                 device_id: deviceID,
                 context_uris: contextURI,
-                uris: uris === null || uris === void 0 ? void 0 : uris.join(','),
+                uris: uris,
                 position_ms: position,
                 offset
             };

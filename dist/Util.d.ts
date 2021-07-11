@@ -12,7 +12,7 @@ export interface FetchOptions {
         [key: string]: string;
     };
     body?: {
-        [key: string]: string | boolean | number;
+        [key: string]: string | boolean | number | string[];
     };
 }
 /**

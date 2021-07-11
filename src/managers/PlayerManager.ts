@@ -248,7 +248,7 @@ export default class PlayerManager {
                 },
                 body: {
                     ...options,
-                    device_ids: devices.join(',')
+                    device_ids: devices
                 }
             })
 
@@ -350,7 +350,7 @@ export default class PlayerManager {
             const opts = { 
                 device_id: deviceID,
                 context_uris: contextURI,
-                uris: uris?.join(','),
+                uris: uris,
                 position_ms: position,
                 offset
             };
