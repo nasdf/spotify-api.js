@@ -266,7 +266,7 @@ export default class PlaylistManager extends BaseManager{
                 },
                 body: {
                     ...opts,
-                    uris: items.join(',')
+                    uris: items
                 } as RawObject
             })).snapshot_id;
         }catch(e){
@@ -296,7 +296,7 @@ export default class PlaylistManager extends BaseManager{
                 },
                 body: {
                     ...opts,
-                    tracks: items.join(',')
+                    tracks: items
                 } as RawObject
             })).snapshot_id;
         }catch(e){

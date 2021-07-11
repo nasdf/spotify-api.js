@@ -254,7 +254,7 @@ class PlaylistManager extends BaseManager_1.default {
                 },
                 body: {
                     ...opts,
-                    uris: items.join(',')
+                    uris: items
                 }
             })).snapshot_id;
         }
@@ -281,7 +281,7 @@ class PlaylistManager extends BaseManager_1.default {
                 },
                 body: {
                     ...opts,
-                    tracks: items.join(',')
+                    tracks: items
                 }
             })).snapshot_id;
         }
